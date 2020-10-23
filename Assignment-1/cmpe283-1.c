@@ -144,32 +144,23 @@ struct capability_info entry[12] =
 struct capability_info exit1[14] =
 {
 
-        { 2, "Save debug controls" },
+     { 2, "Save debug controls" },
      { 9, "Host address-space size" },
-       { 12, "Load IA32_PERF_GLOBAL_CTRL" },
-        { 15, "Acknowledge interr" },
-        { 18, "Save IA32_PAT" },
+     { 12, "Load IA32_PERF_GLOBAL_CTRL" },
+     { 15, "Acknowledge interr" },
+     { 18, "Save IA32_PAT" },
      { 19, "Load IA32_PAT" },
-        { 20, "Save IA32_EFER" },
-            { 21, "Load IA32_EFER"},
-            { 22, "Save VMXpreemption timer value" },
-            { 23, "Clear IA32_BNDCFGS" },
-        { 24, "Conceal VMX from PT" },
-        { 25, "Clear IA32_RTIT_CTL" },
-        { 28, "Load CET state" },
-        { 29, "Load PKRS" }
+     { 20, "Save IA32_EFER" },
+     { 21, "Load IA32_EFER"},
+     { 22, "Save VMXpreemption timer value" },
+     { 23, "Clear IA32_BNDCFGS" },
+     { 24, "Conceal VMX from PT" },
+     { 25, "Clear IA32_RTIT_CTL" },
+     { 28, "Load CET state" },
+     { 29, "Load PKRS" }
     
 };
 
-    
-
-
-
-    
-
-
-
- 
 /*
  * report_capability
  *
@@ -239,10 +230,6 @@ detect_vmx_features(void)
         (uint64_t)(lo | (uint64_t)hi << 32));
     report_capability(procbased_secondary, 27, lo, hi);
 
-
-
-    /* Entry Controls */
-    /* Exit Control */
 /* Entry Controls
            By: Bhavya Lalithya Tetali */
 
