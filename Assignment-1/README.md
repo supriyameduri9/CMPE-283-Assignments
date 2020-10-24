@@ -36,6 +36,7 @@ We distributed the assignment uniformly so that each one of us wrote 2 MSR's Lin
     > $ sudo apt install gcc
 4. Build the file using the Make command.
     > $ make
+    <img width="1440" alt="make" src="https://user-images.githubusercontent.com/71044935/97088566-91572180-15e6-11eb-9d27-c384433ba921.png">
 
 
 
