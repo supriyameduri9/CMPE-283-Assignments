@@ -37,6 +37,24 @@ We distributed the assignment uniformly so that each one of us wrote 2 MSR's Lin
 4. Build the file using the Make command.
     > $ make
     <img width="1440" alt="make" src="https://user-images.githubusercontent.com/71044935/97088566-91572180-15e6-11eb-9d27-c384433ba921.png">
+    
+5. After building the make file, check if kernel object cmpe283-1.ko is created using the below command.
+    > $ ls -latr
+    <img width="1440" alt="ls-latr" src="https://user-images.githubusercontent.com/71044935/97088600-d418f980-15e6-11eb-8e66-481ab7701ad2.png">
+
+6. Loaded the kernel code for all the MSR’s (refer cmpe283-1.c).
+7. Executed the below command to run the kernel code.
+    > $ sudo insmod ./cmpe283-1.ko
+8. To view the system log, executed the below command.
+    > $ dmesg
+    <img width="1440" alt="PinBased" src="https://user-images.githubusercontent.com/71044935/97088610-e5620600-15e6-11eb-92fb-a2d1c7535514.png">
+    <img width="1440" alt="ProcBased" src="https://user-images.githubusercontent.com/71044935/97088618-fad73000-15e6-11eb-85cb-c947accf198a.png">
+    <img width="1440" alt="SecProcBased" src="https://user-images.githubusercontent.com/71044935/97088626-062a5b80-15e7-11eb-800c-831ec45c969b.png">
+    <img width="1440" alt="Exit" src="https://user-images.githubusercontent.com/71044935/97088794-273f7c00-15e8-11eb-83ed-bf5deb4fae57.png"
+9. To unload the module, execute the below command which will call the cleanup_module function in the kernel source code.
+    > $ sudo rmmod cmpe283-1
+
+
 
 
 
